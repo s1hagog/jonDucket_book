@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding checkboxes to the form</title>
+</head>
+<body>
+    <form action="http://www.example.com/profile.php" method="post">
+        <p>
+            Please select your favourite music service(s)
+            <br />
+            <input type="checkbox" name="service" id="icitunes" value="itunes" checked>iTunes
+            <input type="checkbox" name="service" id="iclastfm" value="lastfm">Last.fm
+            <input type="checkbox" name="service" id="icspotify" value="spotify">Spotify
+        </p>
+        <p>
+            In newer browsers we can use just checked attribute. No need to do checked="checked"
+        </p>
+    </form>
+</body>
+</html>
