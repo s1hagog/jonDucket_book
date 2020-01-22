@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 6</title>
+</head>
+<body>
+    <form action="http://www.example.com/form.php" method="post">
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="iname">Name: </label><input type="text" name="name" id="iname" required/><br />
+            <label for="iemail">Email: </label>
+            <input type="email" name="email" id="iemail" required /><br />
+        </fieldset>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <p>
+                <label for="issource">How did you hear about us?</label>
+                <select name="source" id="issource">
+                    <option value="google">Google</option>
+                    <option value="bing">Bing</option>
+                    <option value="yahoo">Yahoo</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                Would you visit again?
+                <br />
+                <input type="radio" name="visit" id="iryes" value="yes"><label for="iryes">Yes</label>
+                <input type="radio" name="visit" id="irno" value="no"><label for="irno">No</label>
+                <input type="radio" name="visit" id="irmaybe" value="maybe"><label for="irmaybe">Maybe</label>
+            </p>
+            <p>
+                <label for="icomments">Comments:</label><br />
+                <textarea name="comments" id="icomments" cols="20" rows="5" placeholder="Enter comments here..."></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="updates" id="icupdates" checked><label for="icupdates">Sign me up for email updates</label>
+                <br />
+                <input type="submit" value="Submit review" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
