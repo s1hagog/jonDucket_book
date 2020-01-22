@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validating forms with required</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="iusername">Username:<input type="text" name="username" id="iusername" required></label><br />
+        <label for="ipassword">Password:<input type="password" name="password" id="ipassword" required></label>
+        <input type="submit" value="Submit" />
+    </form>
+
+    <p><strong>Absolutely bad practice if used as the only validation. Because this can be changed in any browser by 
+        altering html text in dev tools.
+    </strong></p>
+</body>
+</html>
