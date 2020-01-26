@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding a flash movie 2</title>
+    <script type="text/javascript"
+    src="http://ajax.google.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript">
+        const flashvars = {};
+        const params = {movie: "../video/puppy.flv"};
+        swfobject.embedSWF("flash/osplayer.swf", "snow", '400', '320', '8.0.0', flashvars, params);
+    </script>
+</head>
+<body>
+    <div id="snow">
+        <p>A video of puppy playin in the snow</p>
+    </div>
+</body>
+</html>
