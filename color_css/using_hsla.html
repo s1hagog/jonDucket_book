@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Adding background colors to html document</title>
+    <style>
+        body {
+            padding: 1em;
+            color: white;
+        }
+
+        .page {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 2em;
+        }
+
+        h1 {
+            background-color: darkcyan;
+            background-color: hsl(175, 100%, 35%);
+            padding: inherit;
+        }
+
+        h2 {
+            background-color: #ee3e80;
+            background-color: hsl(305, 100%, 45%);
+            padding: inherit
+        }
+
+        p {
+            background-color: rgb(255, 255, 255);
+            background-color: hsl(0, 0%, 100%);
+            padding: inherit;
+            color: black;
+        }
+        
+        .page>*:first-child{
+            margin-top: 0;
+        }
+        .page>*:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Marine Biology</h1>
+        <h2>THe Composition of Seawater</h2>
+        <p>Almost anything can be found in seawater. This includes dissloved materials from Earth's crust
+            as well as materials released from organisms. The most important components of seawater that
+            influence life forms are salinity, temperature, dissolved gases (mostly oxegyn and carbon dioxide), nutrients
+            and pH. These elements vary in their composition as well as in their influence on marine life.
+        </p>
+    </div>
+</body>
+
+</html>
