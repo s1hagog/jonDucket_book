@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="pragna" content="no-cache">
+    <title>Specifying first letter and line in CSS</title>
+    <style>
+        p:nth-child(3)::first-letter{
+            font-size: 200%;
+        }
+        p:nth-child(3)::first-line{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Briards</h1>
+    <p class="credits">by Ivy Duckett</p>
+    <p>The <a href="https://en.wikipedia.org/wiki/Briard">briard</a> or berger de brie, is a large breed of dog traditionally used as
+        a herder and guardian of sheep
+    </p>
+    <p>This vertical alignments will have no effect on this text because it can be used only on table cells or inline elements
+    </p>
+</body>
+</html>
