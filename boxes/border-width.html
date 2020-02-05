@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using Border-width</title>
+    <style>
+        p{
+            max-width: 150px;
+            border: solid black;
+        }
+        p:nth-child(1){
+            border-width: 2px;
+        }
+        p:nth-child(2){
+            border-width: thick;
+        }
+        p:nth-child(3){
+            border-width: 1px 4px 12px 4px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hohner's "Clavinet" is essentially and electric clavichord</p>
+    <p>Hohner's "Clavinet" is essentially and electric clavichord</p>
+    <p>Hohner's "Clavinet" is essentially and electric clavichord</p>
+</body>
+</html>
