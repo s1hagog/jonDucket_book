@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styling Text Inputs</title>
+    <style>
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input {
+            font-size: 1.2rem;
+            color: #5a5854;
+            background-color: #f2f2f2;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+            padding: 5px 5px 5px 30px;
+            background-repeat: no-repeat;
+            background-position: 8px 9px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input:focus, input:hover {
+            background-color: #fff;
+            border: 1px solid #b1e1e4;
+        }
+        input#iemail {
+            background-image: url("images/email.png");
+        }
+        input#itwitter {
+            background-image: url("images/twitter.png");
+        }
+        input#iwebpage {
+            background-image: url("images/web.png");
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="" id="iemail">
+        <input type="text" name="" id="itwitter">
+        <input type="text" name="" id="iwebpage">
+    </form>
+</body>
+</html>

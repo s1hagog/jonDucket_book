@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styling fieldsets & legends</title>
+    <style>
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        fieldset {
+            width: 350px;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: right;
+        }
+        legend {
+            background-color: #efefef;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #000;
+            border-radius: 10px;
+            text-align: left;
+        }
+        input[type=text] {
+            width: 80%
+        }
+        input[type=submit] {
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid #aaa;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            
+        }
+        input[type=submit]:hover {
+            transition: ease;
+            color: #000;
+            background-color: #fff;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Newsletter</legend>
+            <label for="iname">Name:</label>
+            <input type="text" name="" id=""><br>
+            <label for="iemail">Email:</label>
+            <input type="text" name="" id=""><br>
+            <input type="submit" value="Subscribe">
+        </fieldset>
+    </form>
+</body>
+</html>
