@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 11</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #666666;
+        }
+
+        h1 {
+            
+            font-weight: 600;
+            /* text-shadow: 1px 1px 1px; */
+        }
+
+        ul li {
+            list-style-image: url("images/icon-plus.png");
+            line-height: 1.6em;
+        }
+        table {
+            border-spacing: 0;
+        }
+        th, td {
+            padding: 5px 30px 5px 10px;
+            border-spacing: 0;
+            font-size: 0.9rem;
+            margin: 0;
+            text-align: left;
+            border-top: 1px solid #f1f8fe;
+            border-bottom: 2px solid #cbd2d8;
+            border-right: 1px solid #cbd2d8;
+        }
+        tr:nth-child(1).head {
+            background-color: #90b4d6;
+            color: #fff;
+        }
+        tr:nth-child(1) th {
+            text-shadow: -1px -1px 1px #666;
+            border-bottom: 2px solid #547ca0;
+            border-right: 1px solid #749abe;
+            border-top: 1px solid #90b4d6;
+            text-align: center;
+            letter-spacing: 0.15em;
+        }
+        tr:nth-child(even){
+            background-color: #cdd9df;
+        }
+        tr:nth-child(odd){
+            background-color: #d8e9f1;
+        }
+        tr td {
+            max-width: 125px;
+        }
+
+        form{
+            width: 340px;
+            margin-top: 30px;
+        }
+        fieldset {
+            border: 1px solid #cbd2d8;
+        }
+
+        legend {
+            font-style: italic;
+        }
+        p {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .flex div {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Poetry Workshops</h1>
+    <p>We will be conducting a number of poetry workshops and symposiums throughout the year.</p>
+    <p>Please note that the following events are free to members:</p>
+    <ul>
+        <li>A poetric perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr>
+            <th>A poetric perspective</th>
+            <td>Sat, 4 Feb 2020 11am-2pm</td>
+            <td>Sat, 3 Feb 2020 11am-2pm</td>
+            <td>Sat, 12 Feb 2020 11am-2pm</td>
+        </tr>
+        <tr>
+            <th>Walt Whitman at War</td>
+            <td>Sat, 15 Feb 2020 11am-2pm</th>
+            <td>Sat, 1 Feb 2020 11am-2pm</td>
+            <td>Sat, 22 Feb 2020 11am-2pm</td>
+        </tr>
+        <tr>
+            <th>Found Poems & Outsider Poetry</th>
+            <td>Sat, 8 Jun 2012 4pm-6pm</td>
+            <td>Sat, 12 Jun 2012 4pm-6pm</td>
+            <td>Sat, 1 Jun 2012 4pm-6pm</td>
+        </tr>
+        <tr>
+            <th>Natural Death: An Exploration</th>
+            <td>Sat, 4 Aug 2020 1pm-3pm</td>
+            <td>Sat, 11 Aug 2020 1pm-3pm</td>
+            <td>Sat, 18 Aug 2020 1pm-3pm</td>
+        </tr>
+    </table>
+    <form action="#">
+        <fieldset>
+            <legend>Register your interest</legend>
+            <p>
+                <label for="iname">Name:</label>
+                <input type="text" name="name" id="iname">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="text" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="scity">Your closest center:</label>
+                <select name="city" id="scity">
+                    <option value="ny">New York</option>
+                    <option value="van">Vancouver</option>
+                    <option value="sf">San Francisco</option>
+                </select>
+            </p>
+            <div class="flex">
+                <div>
+                    <span>Are you a member?</span>
+                </div>
+                <div>
+                    <input type="radio" name="member" id="rmemberY">
+                    <label for="rmemberY">Yes</label>
+                    <input type="radio" name="member" id="rmemberN">
+                    <label for="rmemberN">No</label>
+                </div>   
+            </div>
+        </fieldset>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

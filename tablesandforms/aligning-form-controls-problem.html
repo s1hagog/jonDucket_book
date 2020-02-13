@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aligning Form Controls: Problem </title>
+    <style>
+        div {
+            border-bottom: 1px solid #efefef;
+            margin: 10px;
+            padding-bottom: 10px;
+            width: 260px;
+        }
+        .title {
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .submit {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="iname" class="title">Name:</label>
+            <input type="text" name="name" id="iname">
+        </div>
+        <div>
+            <label for="iemail" class="title">Email:</label>
+            <input type="email" name="email" id="iemail">
+        </div>
+        <div class="radio-buttons">
+            <span class="title">Gender:</span>
+            <input type="radio" name="gender" id="rfemale" value="F">
+            <label for="rfemale">F</label>
+            <input type="radio" name="gender" id="rmale" value="M">
+            <label for="rmale">M</label>
+        </div>
+        <div class="submit">
+            <input type="submit"  value="Register">
+        </div>
+    </form>
+</body>
+</html>
