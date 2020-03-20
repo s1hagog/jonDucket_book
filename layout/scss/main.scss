@@ -1,0 +1,153 @@
+@font-face{
+    font-family: 'QuicksandBook';
+    src: url("/fonts/Quicksand_Book-webfont.woff") format("woff2")
+}
+    
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+.navigation-main {
+    min-height: 100px;
+
+    .col-3 {
+
+        img {
+            padding-top: 30px;
+        }
+    }
+
+
+
+}
+
+.navigation-background {
+    background-image: url('http://www.htmlandcssbook.com/code-samples/chapter-15/images/bg-header.jpg');
+}
+
+.inline-nav {
+    float: right;
+    color: #c2c2c2;
+    padding-top: 30px;
+
+    li {
+        display: inline-block;
+        
+        a{ 
+            color: #b5c1ad;
+        
+        }
+        
+    }
+}
+
+.main-background-color {
+    background: #413f3b url('http://www.htmlandcssbook.com/code-samples/chapter-15/images/bg.jpg');
+
+}
+
+main {
+    padding-top: 100px;
+}
+
+.margin-right {
+    margin-right: 30px;
+}
+
+.main-header {
+    margin-top: 50px;
+    color: #fff;
+    font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    a {
+        color: #b5c1ad;
+    }
+}
+
+.background-wrapper {
+    background: url('http://www.htmlandcssbook.com/code-samples/chapter-15/images/bg-triangle.png') no-repeat;
+    background-position: 18px -100px;
+    background-size: 60% ;
+
+    .background-triangles {
+        background: url('http://www.htmlandcssbook.com/code-samples/chapter-15/images/triangles.png') no-repeat;
+        background-position: 139px 57px;
+        background-size: 57%;
+    }
+}
+
+
+
+article {
+
+    .article-date {
+        text-transform: uppercase;
+        color: #b5c1ad;
+        margin: 25px 0;
+        font-size: 0.75rem;
+    }
+
+    .article-content {
+        color: #fff;
+        line-height: 1.4em;
+        font-size: 0.9rem;
+
+        a {
+            color: #b5c1ad;
+        }
+    }
+}
+
+.divider-line {
+    border-top: 1px solid white;
+    margin: 40px 0;
+}
+
+.header-articles {
+    text-transform: uppercase;
+    color: #b5c1ad;
+    font-size: 1.4rem;
+    font-family: QuicksandBook;
+    margin-bottom: 1em;
+}
+
+.article-wrapper {
+
+    .article-thumbnail {
+        
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    p {
+        font-size: 0.8rem;
+        padding: 1em 0;
+        border-bottom: 1px solid #807c72;
+
+        a {
+            color: #b5c1ad;
+        }
+    }
+
+}
+
+.footer-text {
+    width: 100%;
+    line-height: 3em;
+    text-align: right;
+    color: #807c72;
+}
+
+.footer-wrapper {
+    background-color: #0000002f;
+}
