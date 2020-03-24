@@ -1,0 +1,17 @@
+img{
+    &.large {
+        width: 200px;
+        height: 450px;
+    }
+
+    &.medium {
+        width: 300px;
+        height: 200px;
+    }
+
+    &.small {
+        width: 75px;
+        height: 20px;
+    }
+
+}
